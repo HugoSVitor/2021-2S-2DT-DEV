@@ -1,0 +1,36 @@
+db = fala qual é o banco atual
+
+use (nome do banco) = muda para o banco ou "cria" caso não exista
+
+show dbs = mostra todos os bancos criados
+
+show collections = mostra todas as collection do banco
+
+db.(nome da collection).find().pretty() = lista os dados de uma collection
+
+db.dropDatabase() = deleta o banco que esta em uso
+
+db.creatCollection("exemplo") = insere uma collection no banco atual
+
+db.exemplo.insertOne({ "Key" : "Value" }) = insere um document
+
+db.(nomeCollection).update({key: "filtro"}, {key: "valueAtualizado"}) = sobrescreve o document
+
+db.(nomeCollection).remove({ ( filtro ) })
+
+     SQL                          NoSQL 
+
+Database                 ->      Database
+Table                    ->      Collection
+Trupla/Registro/Linha    ->      Document
+CREATE TABLE             ->      db.createCollection
+CREATE DATABASE          ->      use "NomeBanco"
+DROP DATABASE            ->      db.dropDatabase() 
+INSERT INTO              ->      insert(), insertOne(), inserMany()
+SELECT                   ->      find(), find().pretty()
+UPDATE                   ->      db.(nomeCollection).update({key: "Filtro"}, {key: "NovoValor"})
+DELETE                   ->      db.(nomeCollection).remove({ ( filtro ) })
+DROP TABLE               ->      db.(nomeCollection).drop()
+
+
+

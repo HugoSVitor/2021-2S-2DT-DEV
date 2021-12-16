@@ -1,0 +1,17 @@
+Desing Pattern
+
+Repository (Padrão)
+
+4-camadas
+
+ Domain (domínios) - Modelz - São a representação do Banco de Dados. Representa a entidade.
+ Interfaces (interfaces) - São contratos, vão dizer o que vai ser feito (A regra do negócio).
+ Repositóries (repositórios) - Define como vai ser feito a partir da interface.
+ Controllers (controladores) - Recevem uma requisição, estão diretamente ligados ao FRONTEND.
+
+Análogia restaurante
+
+ Repositóries = cozinheiro.
+ Controllert = garçom.
+ Interface = regras do local, menu da casa.
+ Dominios = pratos da casa.
